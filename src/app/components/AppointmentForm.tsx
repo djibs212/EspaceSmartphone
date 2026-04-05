@@ -428,24 +428,6 @@ export function AppointmentForm() {
               </div>
             </div>
 
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start gap-3">
-              <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <div className="text-sm">
-                <p className="text-amber-900 mb-2">
-                  <strong>Configuration EmailJS requise</strong>
-                </p>
-                <p className="text-amber-800">
-                  Pour recevoir les emails automatiquement, suivez ce guide ultra-simple (2 minutes) :
-                </p>
-                <ol className="list-decimal ml-5 mt-2 text-amber-800 space-y-1">
-                  <li>Allez sur <a href="https://www.emailjs.com" target="_blank" rel="noopener noreferrer" className="underline">emailjs.com</a> et créez un compte gratuit</li>
-                  <li>Ajoutez votre service email (Gmail recommandé)</li>
-                  <li>Créez un template d'email avec ces variables : client_name, client_phone, device_brand, device_model, issue_type</li>
-                  <li>Copiez vos clés (Service ID, Template ID, Public Key) dans le fichier <code className="bg-amber-100 px-1 rounded">/src/utils/email.ts</code></li>
-                </ol>
-              </div>
-            </div>
-
             <button
               type="submit"
               disabled={sending}
